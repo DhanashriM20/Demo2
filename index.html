@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 15px;
+      }
+      h2 {
+        font-family: "Times New Roman", Times, serif;
+        width: 550px;
+      }
+
+      label {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+        margin-left: 50px;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="email"] {
+        margin-left: 60px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+        width: 450px;
+      }
+      input[type="submit"] {
+        margin: 30px;
+        width: 200px;
+        margin-left: 40px;
+      }
+      input[type="button"] {
+        margin-top: -158px;
+        width: 200px;
+        margin-left: 300px;
+        
+      }
+      .outer-container {
+        border: 1px solid black;
+        width: 650px;
+        height: 570px;
+        border-radius: 20px;
+        margin-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <div class="outer-container">
+        <div class="container">
+          <section class="heading">
+            <h2 class="alert alert-primary">Add Details of Student</h2>
+          </section>
+          <section class="main">
+            <label for="uname"><b>Username</b> </label><br />
+            <input type="text" name="uname" id="uname" required /><br />
+            <label for="Contact"><b>Contact</b></label
+            ><br />
+            <input type="text" name="ucontact" id="ucontact" required/><br />
+            <label for="email"><b>Email</b></label
+            ><br />
+            <input type="email" name="email" id="email" required /><br />
+            <div class="row">
+                <div class="col-md"><input
+                    type="submit"
+                    value="Submit"
+                    onclick="saveData()"
+                    class="btn btn-primary"
+                  />
+                  </div>
+                  <div class="col-md"><input type="button" id = "getData" value="GetData" onclick = "display()" class="btn btn-primary"></div>
+            </div>
+            <br />
+
+          </section>
+        </div>
+      </div>
+    </form>
+    <script src="store_data.js"></script>
+  </body>
+</html>
